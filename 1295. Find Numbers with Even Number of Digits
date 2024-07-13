@@ -1,0 +1,8 @@
+class Solution:
+    def findNumbers(self, nums: List[int]) -> int:
+        nums=list(map(str,nums))
+        count=0
+        for k in nums:
+            if len(k)%2==0:count+=1
+        return count
+        
