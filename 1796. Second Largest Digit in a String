@@ -1,0 +1,8 @@
+class Solution:
+    def secondHighest(self, s: str) -> int:
+        l=[]
+        for k in range(10):
+            
+            if str(k) in s :l.append(k)
+        return l[-2] if len(l)>1 else -1
+        
