@@ -1,0 +1,11 @@
+from itertools import permutations 
+class Solution:
+    def largestOddNumber(self, num: str) -> str:
+        l=""
+        s=""
+        for k in num:
+            s=s+k
+            if k in "13579":l=s
+        return l 
+                
+                
