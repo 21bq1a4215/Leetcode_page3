@@ -1,0 +1,10 @@
+class Solution:
+    def replaceDigits(self, s: str) -> str:
+        l=[]
+        for k in s:
+            if k.isalpha():
+                l.append(k)
+            else:l.append(chr(ord(l[-1])+int(k)))
+        return "".join(l)
+            
+            
